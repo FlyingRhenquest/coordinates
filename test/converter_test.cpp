@@ -16,12 +16,12 @@
  *  limitations under the License.
  */
 
-#include "cppunit"
+#include <cppunit/extensions/HelperMacros.h>
 #include "coordinates.hpp"
 #include <iostream>
 #include <iomanip>
 
-class converter_test : public test_class
+class converter_test : public CppUnit::TestFixture
 {
   CPPUNIT_TEST_SUITE(converter_test);
   CPPUNIT_TEST(test_to_latlong);
